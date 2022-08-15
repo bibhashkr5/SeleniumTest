@@ -1,0 +1,7 @@
+node_modules/*
+*.log
+Report/*
+reports/*
+package-lock.json
+config/assets.json
+config/config.json

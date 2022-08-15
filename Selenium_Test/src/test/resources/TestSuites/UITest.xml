@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="1" name="UITest" parallel="tests">
+
+	<listeners>
+		<listener class-name="com.rakuten.rstar.common.TestListener" />
+	</listeners>
+
+    <test name="Verify that user should be able to recognize their peer">
+		<classes>
+			<class name="com.rakuten.rstar.uiTests.RecognizeTest" />
+		</classes>
+	</test>
+	
+     <test name="Verify header components and other user search through Search option">
+		<classes>
+			<class name="com.rakuten.rstar.uiTests.HeaderAndUserSearchTest" />
+		</classes>
+	</test>  
+	
+	<test name="Verify whitelisting in RSTAR">
+		<classes>
+			<class name="com.rakuten.rstar.uiTests.UserManagemnentTest" />
+		</classes>
+	</test>  
+
+    <test name="Verify Redeem Product in RSTAR">
+		<classes>
+			<class name="com.rakuten.rstar.uiTests.RedeemTest" />
+		</classes>
+	</test> 
+	
+	<test name="Verify test related to user having zero wallet balance in RSTAR">
+		<classes>
+			<class name="com.rakuten.rstar.uiTests.UserWithZeroCoinTest" />
+		</classes>
+	</test>
+	
+	<test name="Verify User Profile page details for log in User">
+		<classes>
+			<class name="com.rakuten.rstar.uiTests.UserProfileTest" />
+		</classes>
+	</test> 
+	
+	<test name="Verify Redeem Product approval or rejection by client in RSTAR">
+		<classes>
+			<class name="com.rakuten.rstar.uiTests.ClientUITest" />
+		</classes>
+	</test> 
+	 
+</suite>
